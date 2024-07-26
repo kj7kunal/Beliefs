@@ -19,6 +19,7 @@
 		D95959FC2C53A11F0097E324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F42C53A11F0097E324 /* ContentView.swift */; };
 		D95959FD2C53A11F0097E324 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = D95959F52C53A11F0097E324 /* Preview Content */; };
 		D95959FF2C53A21B0097E324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */; };
+		D9595A012C53A8DB0097E324 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A002C53A8DB0097E324 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		D95959F42C53A11F0097E324 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D95959F52C53A11F0097E324 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9595A002C53A8DB0097E324 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				D95959EE2C53A11F0097E324 /* BeliefsApp.swift */,
 				D95959F32C53A11F0097E324 /* BeliefsView.swift */,
 				D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */,
+				D9595A002C53A8DB0097E324 /* Theme.swift */,
 				D95959F42C53A11F0097E324 /* ContentView.swift */,
 				D95959F22C53A11F0097E324 /* MainTabView.swift */,
 				D95959F02C53A11F0097E324 /* NewBeliefView.swift */,
@@ -272,6 +275,7 @@
 				D95959F62C53A11F0097E324 /* BeliefsApp.swift in Sources */,
 				D95959FB2C53A11F0097E324 /* BeliefsView.swift in Sources */,
 				D95959FA2C53A11F0097E324 /* MainTabView.swift in Sources */,
+				D9595A012C53A8DB0097E324 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
