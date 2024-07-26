@@ -20,6 +20,8 @@
 		D95959FD2C53A11F0097E324 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = D95959F52C53A11F0097E324 /* Preview Content */; };
 		D95959FF2C53A21B0097E324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */; };
 		D9595A012C53A8DB0097E324 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A002C53A8DB0097E324 /* Theme.swift */; };
+		D9595A032C53AAD50097E324 /* Database in Resources */ = {isa = PBXBuildFile; fileRef = D9595A022C53AAD50097E324 /* Database */; };
+		D9595A052C53AB270097E324 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = D9595A042C53AB270097E324 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		D95959F52C53A11F0097E324 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9595A002C53A8DB0097E324 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D9595A022C53AAD50097E324 /* Database */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Database; sourceTree = "<group>"; };
+		D9595A042C53AB270097E324 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,9 @@
 			children = (
 				D95959EF2C53A11F0097E324 /* Assets.xcassets */,
 				D95959EE2C53A11F0097E324 /* BeliefsApp.swift */,
+				D9595A042C53AB270097E324 /* Model */,
 				D95959F32C53A11F0097E324 /* BeliefsView.swift */,
+				D9595A022C53AAD50097E324 /* Database */,
 				D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */,
 				D9595A002C53A8DB0097E324 /* Theme.swift */,
 				D95959F42C53A11F0097E324 /* ContentView.swift */,
@@ -242,7 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9595A052C53AB270097E324 /* Model in Resources */,
 				D95959FF2C53A21B0097E324 /* LaunchScreen.storyboard in Resources */,
+				D9595A032C53AAD50097E324 /* Database in Resources */,
 				D95959FD2C53A11F0097E324 /* Preview Content in Resources */,
 				D95959F72C53A11F0097E324 /* Assets.xcassets in Resources */,
 			);
