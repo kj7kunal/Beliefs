@@ -18,6 +18,7 @@
 		D95959FB2C53A11F0097E324 /* BeliefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F32C53A11F0097E324 /* BeliefsView.swift */; };
 		D95959FC2C53A11F0097E324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F42C53A11F0097E324 /* ContentView.swift */; };
 		D95959FD2C53A11F0097E324 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = D95959F52C53A11F0097E324 /* Preview Content */; };
+		D95959FF2C53A21B0097E324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		D95959F32C53A11F0097E324 /* BeliefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeliefsView.swift; sourceTree = "<group>"; };
 		D95959F42C53A11F0097E324 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D95959F52C53A11F0097E324 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				D95959EF2C53A11F0097E324 /* Assets.xcassets */,
 				D95959EE2C53A11F0097E324 /* BeliefsApp.swift */,
 				D95959F32C53A11F0097E324 /* BeliefsView.swift */,
+				D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */,
 				D95959F42C53A11F0097E324 /* ContentView.swift */,
 				D95959F22C53A11F0097E324 /* MainTabView.swift */,
 				D95959F02C53A11F0097E324 /* NewBeliefView.swift */,
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95959FF2C53A21B0097E324 /* LaunchScreen.storyboard in Resources */,
 				D95959FD2C53A11F0097E324 /* Preview Content in Resources */,
 				D95959F72C53A11F0097E324 /* Assets.xcassets in Resources */,
 			);
