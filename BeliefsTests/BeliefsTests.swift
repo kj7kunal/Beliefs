@@ -8,29 +8,19 @@
 import XCTest
 @testable import Beliefs
 
-final class BeliefsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class BeliefsTests: XCTestCase {
+    func testBeliefsViewLoads() {
+        let view = BeliefsView()
+        XCTAssertNotNil(view, "BeliefsView should load successfully")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testNewBeliefViewLoads() {
+        let view = NewBeliefView()
+        XCTAssertNotNil(view, "NewBeliefView should load successfully")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testSettingsViewLoads() {
+        let view = SettingsView()
+        XCTAssertNotNil(view, "SettingsView should load successfully")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
