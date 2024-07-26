@@ -117,4 +117,3 @@ class DatabaseManager {
         sqlite3_finalize(deleteStatement)
     }
 }
-
