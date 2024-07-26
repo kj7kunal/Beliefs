@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D95959B12C5389A70097E324 /* BeliefsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959B02C5389A70097E324 /* BeliefsApp.swift */; };
-		D95959B52C5389A90097E324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95959B42C5389A90097E324 /* Assets.xcassets */; };
-		D95959B82C5389A90097E324 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95959B72C5389A90097E324 /* Preview Assets.xcassets */; };
 		D95959C22C5389A90097E324 /* BeliefsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959C12C5389A90097E324 /* BeliefsTests.swift */; };
 		D95959CC2C5389A90097E324 /* BeliefsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959CB2C5389A90097E324 /* BeliefsUITests.swift */; };
 		D95959CE2C5389A90097E324 /* BeliefsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959CD2C5389A90097E324 /* BeliefsUITestsLaunchTests.swift */; };
-		D95959DB2C5395940097E324 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959DA2C5395940097E324 /* MainTabView.swift */; };
-		D95959E22C5397420097E324 /* BeliefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959DC2C5397410097E324 /* BeliefsView.swift */; };
-		D95959E32C5397420097E324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959DD2C5397410097E324 /* ContentView.swift */; };
-		D95959E42C5397420097E324 /* NewBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959DE2C5397410097E324 /* NewBeliefView.swift */; };
-		D95959E52C5397420097E324 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = D95959DF2C5397410097E324 /* Preview Content */; };
-		D95959E62C5397420097E324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95959E02C5397410097E324 /* Assets.xcassets */; };
-		D95959E72C5397420097E324 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959E12C5397410097E324 /* SettingsView.swift */; };
+		D95959F62C53A11F0097E324 /* BeliefsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959EE2C53A11F0097E324 /* BeliefsApp.swift */; };
+		D95959F72C53A11F0097E324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95959EF2C53A11F0097E324 /* Assets.xcassets */; };
+		D95959F82C53A11F0097E324 /* NewBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F02C53A11F0097E324 /* NewBeliefView.swift */; };
+		D95959F92C53A11F0097E324 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F12C53A11F0097E324 /* SettingsView.swift */; };
+		D95959FA2C53A11F0097E324 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F22C53A11F0097E324 /* MainTabView.swift */; };
+		D95959FB2C53A11F0097E324 /* BeliefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F32C53A11F0097E324 /* BeliefsView.swift */; };
+		D95959FC2C53A11F0097E324 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F42C53A11F0097E324 /* ContentView.swift */; };
+		D95959FD2C53A11F0097E324 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = D95959F52C53A11F0097E324 /* Preview Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,21 +39,19 @@
 
 /* Begin PBXFileReference section */
 		D95959AD2C5389A70097E324 /* Beliefs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beliefs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D95959B02C5389A70097E324 /* BeliefsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefsApp.swift; sourceTree = "<group>"; };
-		D95959B42C5389A90097E324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D95959B72C5389A90097E324 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D95959BD2C5389A90097E324 /* BeliefsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeliefsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95959C12C5389A90097E324 /* BeliefsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefsTests.swift; sourceTree = "<group>"; };
 		D95959C72C5389A90097E324 /* BeliefsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeliefsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95959CB2C5389A90097E324 /* BeliefsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefsUITests.swift; sourceTree = "<group>"; };
 		D95959CD2C5389A90097E324 /* BeliefsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D95959DA2C5395940097E324 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		D95959DC2C5397410097E324 /* BeliefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeliefsView.swift; sourceTree = "<group>"; };
-		D95959DD2C5397410097E324 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D95959DE2C5397410097E324 /* NewBeliefView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBeliefView.swift; sourceTree = "<group>"; };
-		D95959DF2C5397410097E324 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
-		D95959E02C5397410097E324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D95959E12C5397410097E324 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D95959EE2C53A11F0097E324 /* BeliefsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeliefsApp.swift; sourceTree = "<group>"; };
+		D95959EF2C53A11F0097E324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D95959F02C53A11F0097E324 /* NewBeliefView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBeliefView.swift; sourceTree = "<group>"; };
+		D95959F12C53A11F0097E324 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D95959F22C53A11F0097E324 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D95959F32C53A11F0097E324 /* BeliefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeliefsView.swift; sourceTree = "<group>"; };
+		D95959F42C53A11F0097E324 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D95959F52C53A11F0097E324 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,26 +102,16 @@
 		D95959AF2C5389A70097E324 /* Beliefs */ = {
 			isa = PBXGroup;
 			children = (
-				D95959E02C5397410097E324 /* Assets.xcassets */,
-				D95959DC2C5397410097E324 /* BeliefsView.swift */,
-				D95959DD2C5397410097E324 /* ContentView.swift */,
-				D95959DE2C5397410097E324 /* NewBeliefView.swift */,
-				D95959DF2C5397410097E324 /* Preview Content */,
-				D95959E12C5397410097E324 /* SettingsView.swift */,
-				D95959B02C5389A70097E324 /* BeliefsApp.swift */,
-				D95959DA2C5395940097E324 /* MainTabView.swift */,
-				D95959B42C5389A90097E324 /* Assets.xcassets */,
-				D95959B62C5389A90097E324 /* Preview Content */,
+				D95959EF2C53A11F0097E324 /* Assets.xcassets */,
+				D95959EE2C53A11F0097E324 /* BeliefsApp.swift */,
+				D95959F32C53A11F0097E324 /* BeliefsView.swift */,
+				D95959F42C53A11F0097E324 /* ContentView.swift */,
+				D95959F22C53A11F0097E324 /* MainTabView.swift */,
+				D95959F02C53A11F0097E324 /* NewBeliefView.swift */,
+				D95959F52C53A11F0097E324 /* Preview Content */,
+				D95959F12C53A11F0097E324 /* SettingsView.swift */,
 			);
 			path = Beliefs;
-			sourceTree = "<group>";
-		};
-		D95959B62C5389A90097E324 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D95959B72C5389A90097E324 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		D95959C02C5389A90097E324 /* BeliefsTests */ = {
@@ -213,6 +199,7 @@
 				TargetAttributes = {
 					D95959AC2C5389A70097E324 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					D95959BC2C5389A90097E324 = {
 						CreatedOnToolsVersion = 15.2;
@@ -249,10 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95959E52C5397420097E324 /* Preview Content in Resources */,
-				D95959B82C5389A90097E324 /* Preview Assets.xcassets in Resources */,
-				D95959E62C5397420097E324 /* Assets.xcassets in Resources */,
-				D95959B52C5389A90097E324 /* Assets.xcassets in Resources */,
+				D95959FD2C53A11F0097E324 /* Preview Content in Resources */,
+				D95959F72C53A11F0097E324 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,12 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95959E42C5397420097E324 /* NewBeliefView.swift in Sources */,
-				D95959B12C5389A70097E324 /* BeliefsApp.swift in Sources */,
-				D95959E22C5397420097E324 /* BeliefsView.swift in Sources */,
-				D95959E72C5397420097E324 /* SettingsView.swift in Sources */,
-				D95959E32C5397420097E324 /* ContentView.swift in Sources */,
-				D95959DB2C5395940097E324 /* MainTabView.swift in Sources */,
+				D95959F92C53A11F0097E324 /* SettingsView.swift in Sources */,
+				D95959F82C53A11F0097E324 /* NewBeliefView.swift in Sources */,
+				D95959FC2C53A11F0097E324 /* ContentView.swift in Sources */,
+				D95959F62C53A11F0097E324 /* BeliefsApp.swift in Sources */,
+				D95959FB2C53A11F0097E324 /* BeliefsView.swift in Sources */,
+				D95959FA2C53A11F0097E324 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beliefs/Preview Content\"";
@@ -461,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kj7kunal.Beliefs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beliefs/Preview Content\"";
