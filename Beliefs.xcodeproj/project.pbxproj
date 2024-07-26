@@ -22,6 +22,7 @@
 		D9595A0A2C53AE410097E324 /* NewBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959F02C53A11F0097E324 /* NewBeliefView.swift */; };
 		D9595A0F2C53AF020097E324 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A0E2C53AF020097E324 /* DatabaseManager.swift */; };
 		D9595A112C53AF370097E324 /* Belief.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A102C53AF370097E324 /* Belief.swift */; };
+		D9595A132C53B00C0097E324 /* EditBeliefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A122C53B00C0097E324 /* EditBeliefView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		D9595A002C53A8DB0097E324 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D9595A0E2C53AF020097E324 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = Database/DatabaseManager.swift; sourceTree = "<group>"; };
 		D9595A102C53AF370097E324 /* Belief.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Belief.swift; path = Model/Belief.swift; sourceTree = "<group>"; };
+		D9595A122C53B00C0097E324 /* EditBeliefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBeliefView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				D95959EF2C53A11F0097E324 /* Assets.xcassets */,
 				D95959EE2C53A11F0097E324 /* BeliefsApp.swift */,
 				D95959F32C53A11F0097E324 /* BeliefsView.swift */,
+				D9595A122C53B00C0097E324 /* EditBeliefView.swift */,
 				D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */,
 				D9595A002C53A8DB0097E324 /* Theme.swift */,
 				D9595A0E2C53AF020097E324 /* DatabaseManager.swift */,
@@ -282,6 +285,7 @@
 				D95959F62C53A11F0097E324 /* BeliefsApp.swift in Sources */,
 				D9595A0A2C53AE410097E324 /* NewBeliefView.swift in Sources */,
 				D95959FB2C53A11F0097E324 /* BeliefsView.swift in Sources */,
+				D9595A132C53B00C0097E324 /* EditBeliefView.swift in Sources */,
 				D95959FA2C53A11F0097E324 /* MainTabView.swift in Sources */,
 				D9595A012C53A8DB0097E324 /* Theme.swift in Sources */,
 			);
