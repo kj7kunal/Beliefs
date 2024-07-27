@@ -23,13 +23,18 @@ struct BeliefsView: View {
                 .onDelete(perform: delete)
             }
             .navigationTitle("My Beliefs")
-            .navigationBarItems(trailing: Button("Refresh") {
-                refreshBeliefs()
-            })
-            .sheet(isPresented: $showEditView) {
-                EditBeliefView(belief: $selectedBelief, onUpdate: {
+            .navigationBarItems(
+                leading: EditButton(),
+                trailing: Button("Refresh") {
                     refreshBeliefs()
-                })
+                }
+            )
+            .sheet(isPresented: $showEditView) {
+                if selectedBelief != nil {
+                    EditBeliefView(belief: $selectedBelief, onUpdate: {
+                        refreshBeliefs()
+                    })
+                }
             }
         }
         .onAppear {
@@ -39,11 +44,13 @@ struct BeliefsView: View {
     
     private func refreshBeliefs() {
         beliefs = DatabaseManager.shared.fetchAllBeliefs()
+        print("Fetched Beliefs: \(beliefs)")
     }
     
     private func delete(at offsets: IndexSet) {
         for index in offsets {
-            DatabaseManager.shared.deleteBelief(id: beliefs[index].id)
+            let belief = beliefs[index]
+            DatabaseManager.shared.deleteBelief(id: belief.id)
         }
         refreshBeliefs()
     }

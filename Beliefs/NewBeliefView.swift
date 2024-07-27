@@ -3,7 +3,7 @@ import SwiftUI
 struct NewBeliefView: View {
     @State private var title: String = ""
     @State private var evidence: String = ""
-    
+
     var body: some View {
         NavigationView {
             Form {
@@ -20,8 +20,9 @@ struct NewBeliefView: View {
             })
         }
     }
-    
+
     private func saveBelief() {
+        guard !title.isEmpty else { return }
         DatabaseManager.shared.insertBelief(title: title, evidence: evidence)
         title = ""
         evidence = ""

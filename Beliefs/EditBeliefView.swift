@@ -6,6 +6,7 @@ struct EditBeliefView: View {
     
     @State private var title: String = ""
     @State private var evidence: String = ""
+    @Environment(\.presentationMode) var presentationMode  // To control the view presentation
     
     var body: some View {
         NavigationView {
@@ -19,10 +20,7 @@ struct EditBeliefView: View {
             }
             .navigationBarTitle("Edit Belief", displayMode: .inline)
             .navigationBarItems(trailing: Button("Save") {
-                if let belief = belief {
-                    DatabaseManager.shared.updateBelief(id: belief.id, title: title, evidence: evidence)
-                    onUpdate()
-                }
+                saveBelief()
             })
         }
         .onAppear {
@@ -31,6 +29,18 @@ struct EditBeliefView: View {
                 evidence = belief.evidence
             }
         }
+    }
+    
+    private func saveBelief() {
+        guard var belief = belief else { return }
+        // Update the local belief data
+        belief.title = title
+        belief.evidence = evidence
+        // Update the database
+        DatabaseManager.shared.updateBelief(id: belief.id, title: title, evidence: evidence)
+        // Notify the parent view of the update
+        onUpdate()
+        presentationMode.wrappedValue.dismiss()  // Dismiss the view
     }
 }
 
