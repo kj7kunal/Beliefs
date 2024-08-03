@@ -3,6 +3,10 @@ import SwiftUI
 struct NewBeliefView: View {
     @State private var title: String = ""
     @State private var evidence: String = ""
+    @State private var categories: [Category] = []
+    @State private var selectedCategory = "Misc"
+    @State private var categoryInput = ""
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         NavigationView {
@@ -13,19 +17,37 @@ struct NewBeliefView: View {
                 Section(header: Text("Evidence")) {
                     TextField("Enter supporting evidence", text: $evidence)
                 }
+                Section(header: Text("Category")) {
+                    AutocompleteTextField(text: $categoryInput, suggestions: categories.map { $0.name }) { suggestion in
+                        categoryInput = suggestion
+                    }
+                }
             }
             .navigationBarTitle("New Belief", displayMode: .inline)
             .navigationBarItems(trailing: Button("Save") {
                 saveBelief()
             })
         }
+        .onAppear {
+            categories = DatabaseManager.shared.fetchAllCategories()
+            if categories.isEmpty {
+                DatabaseManager.shared.insertCategory(name: "Misc")
+                categories = DatabaseManager.shared.fetchAllCategories()
+            }
+        }
     }
 
     private func saveBelief() {
         guard !title.isEmpty else { return }
-        DatabaseManager.shared.insertBelief(title: title, evidence: evidence)
+        let categoryToSave = categoryInput.isEmpty ? "Misc" : categoryInput
+        if !categories.contains(where: { $0.name == categoryToSave }) {
+            DatabaseManager.shared.insertCategory(name: categoryToSave)
+        }
+        DatabaseManager.shared.insertBelief(title: title, evidence: evidence, category: categoryToSave)
         title = ""
         evidence = ""
+        categoryInput = ""
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
