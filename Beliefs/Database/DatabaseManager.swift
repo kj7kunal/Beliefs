@@ -50,6 +50,14 @@ class DatabaseManager {
         }
         sqlite3_finalize(statement)
     }
+
+    func clearAllBeliefs() {
+        let deleteBeliefsStatement = "DELETE FROM Beliefs;"
+        
+        executeStatement(
+            sql: deleteBeliefsStatement, errorMessage: "Error clearing Beliefs table"
+        )
+    }
     
     // MARK: - Belief Operations
     
@@ -182,5 +190,13 @@ class DatabaseManager {
         }
         sqlite3_finalize(statement)
         return categories
+    }
+    
+    func clearAllCategories() {
+        let deleteCategoriesStatement = "DELETE FROM Categories;"
+        
+        executeStatement(
+            sql: deleteCategoriesStatement, errorMessage: "Error clearing Categories table"
+        )
     }
 }
