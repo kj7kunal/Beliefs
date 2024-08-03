@@ -26,6 +26,7 @@
 		D9595A152C54EBC60097E324 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A142C54EBC60097E324 /* FeedView.swift */; };
 		D9595A172C54F5420097E324 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A162C54F5420097E324 /* Category.swift */; };
 		D9595A192C56654A0097E324 /* AutocompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9595A182C56654A0097E324 /* AutocompleteTextField.swift */; };
+		D98CA1392C5E10EF008A4D40 /* CategoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98CA1382C5E10EF008A4D40 /* CategoryFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D9595A142C54EBC60097E324 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		D9595A162C54F5420097E324 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Model/Category.swift; sourceTree = "<group>"; };
 		D9595A182C56654A0097E324 /* AutocompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutocompleteTextField.swift; path = Components/AutocompleteTextField.swift; sourceTree = "<group>"; };
+		D98CA1382C5E10EF008A4D40 /* CategoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */,
 				D9595A162C54F5420097E324 /* Category.swift */,
 				D9595A002C53A8DB0097E324 /* Theme.swift */,
+				D98CA1382C5E10EF008A4D40 /* CategoryFeedView.swift */,
 				D9595A0E2C53AF020097E324 /* DatabaseManager.swift */,
 				D9595A102C53AF370097E324 /* Belief.swift */,
 				D95959F42C53A11F0097E324 /* ContentView.swift */,
@@ -299,6 +302,7 @@
 				D9595A132C53B00C0097E324 /* EditBeliefView.swift in Sources */,
 				D95959FA2C53A11F0097E324 /* MainTabView.swift in Sources */,
 				D9595A012C53A8DB0097E324 /* Theme.swift in Sources */,
+				D98CA1392C5E10EF008A4D40 /* CategoryFeedView.swift in Sources */,
 				D9595A172C54F5420097E324 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
