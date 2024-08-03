@@ -5,6 +5,7 @@ struct SettingsView: View {
     @State private var showingAlert = false
     @State private var beliefCount: Int = 0
     @State private var categoryStats: [String: Int] = [:]
+    @State private var isCategoryStatsExpanded = false
     
     var body: some View {
         NavigationView {
@@ -17,8 +18,10 @@ struct SettingsView: View {
                 
                 Section(header: Text("Statistics")) {
                     Text("Total Beliefs: \(beliefCount)")
-                    ForEach(categoryStats.keys.sorted(), id: \.self) { category in
-                        Text("\(category): \(categoryStats[category]!)")
+                    DisclosureGroup("Category Statistics", isExpanded: $isCategoryStatsExpanded) {
+                        ForEach(categoryStats.keys.sorted { $0 > $1 }, id: \.self) { category in
+                            Text("\(category): \(categoryStats[category]!)")
+                        }
                     }
                 }
                 
