@@ -199,4 +199,40 @@ class DatabaseManager {
             sql: deleteCategoriesStatement, errorMessage: "Error clearing Categories table"
         )
     }
+    
+    // MARK: - Statistics Operations
+    
+    func getTotalBeliefsCount() -> Int {
+        let queryStatementString = "SELECT COUNT(*) FROM Beliefs;"
+        var queryStatement: OpaquePointer?
+        var count: Int = 0
+
+        if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+            if sqlite3_step(queryStatement) == SQLITE_ROW {
+                count = Int(sqlite3_column_int(queryStatement, 0))
+            }
+        } else {
+            print("SELECT statement could not be prepared: \(String(cString: sqlite3_errmsg(db)!))")
+        }
+        sqlite3_finalize(queryStatement)
+        return count
+    }
+
+    func getCategoryStatistics() -> [String: Int] {
+        let queryStatementString = "SELECT category, COUNT(*) FROM Beliefs GROUP BY category;"
+        var queryStatement: OpaquePointer?
+        var categoryStats = [String: Int]()
+
+        if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+            while sqlite3_step(queryStatement) == SQLITE_ROW {
+                let category = String(cString: sqlite3_column_text(queryStatement, 0))
+                let count = Int(sqlite3_column_int(queryStatement, 1))
+                categoryStats[category] = count
+            }
+        } else {
+            print("SELECT statement could not be prepared: \(String(cString: sqlite3_errmsg(db)!))")
+        }
+        sqlite3_finalize(queryStatement)
+        return categoryStats
+    }
 }

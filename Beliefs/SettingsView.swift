@@ -3,6 +3,8 @@ import SwiftUI
 struct SettingsView: View {
     @EnvironmentObject var userPreferences: UserPreferences
     @State private var showingAlert = false
+    @State private var beliefCount: Int = 0
+    @State private var categoryStats: [String: Int] = [:]
     
     var body: some View {
         NavigationView {
@@ -13,11 +15,26 @@ struct SettingsView: View {
                     }
                 }
                 
+                Section(header: Text("Statistics")) {
+                    Text("Total Beliefs: \(beliefCount)")
+                    ForEach(categoryStats.keys.sorted(), id: \.self) { category in
+                        Text("\(category): \(categoryStats[category]!)")
+                    }
+                }
+                
                 Section(header: Text("Data")) {
                     Button("Clear All Data") {
                         showingAlert = true
                     }
                     .foregroundColor(.red)
+                    
+                    Button("Export Data") {
+                        exportData()
+                    }
+                    
+                    Button("Import Data") {
+                        importData()
+                    }
                 }
             }
             .navigationBarTitle("Settings", displayMode: .inline)
@@ -28,11 +45,28 @@ struct SettingsView: View {
                     primaryButton: .destructive(Text("Clear")) {
                         DatabaseManager.shared.clearAllBeliefs()
                         DatabaseManager.shared.clearAllCategories()
+                        fetchStatistics()
                     },
                     secondaryButton: .cancel()
                 )
             }
+            .onAppear {
+                fetchStatistics()
+            }
         }
+    }
+    
+    private func fetchStatistics() {
+        beliefCount = DatabaseManager.shared.getTotalBeliefsCount()
+        categoryStats = DatabaseManager.shared.getCategoryStatistics()
+    }
+    
+    private func exportData() {
+        // Implementation for exporting data to JSON file
+    }
+    
+    private func importData() {
+        // Implementation for importing data from JSON file
     }
 }
 
