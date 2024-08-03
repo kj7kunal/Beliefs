@@ -11,7 +11,7 @@ struct FeedView: View {
         NavigationView {
             VStack {
                 HStack {
-                    TextField("Filter", text: $filterText)
+                    TextField("Search", text: $filterText)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.horizontal)
                     

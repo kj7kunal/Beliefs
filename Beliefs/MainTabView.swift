@@ -20,11 +20,6 @@ struct MainTabView: View {
                     Label("My Beliefs", systemImage: "book.fill")
                 }
             
-            NewBeliefView()
-                .tabItem {
-                    Label("New Belief", systemImage: "plus.circle.fill")
-                }
-            
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
