@@ -46,7 +46,7 @@ struct FeedView: View {
                                     Spacer()
                                     Text(belief.category)
                                         .padding(5)
-                                        .background(Color.yellow.opacity(0.5))
+                                        .background(getColor(for: belief.category).opacity(0.5))
                                         .cornerRadius(5)
                                 }
                             }
@@ -80,11 +80,15 @@ struct FeedView: View {
             beliefs.sort { $0.id > $1.id }
         case "Title":
             beliefs.sort { $0.title.lowercased() < $1.title.lowercased() }
-        case "Category":
-            beliefs.sort { $0.category.lowercased() < $1.category.lowercased() }
         default:
             break
         }
+    }
+    
+    private func getColor(for category: String) -> Color {
+        let colors: [Color] = [.red, .green, .blue, .orange, .purple, .yellow, .pink, .gray]
+        let hashValue = abs(category.hashValue)
+        return colors[hashValue % colors.count]
     }
 }
 
