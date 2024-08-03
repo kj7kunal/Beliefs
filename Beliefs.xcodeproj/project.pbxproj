@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D904CEA72C5E89A30046A434 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904CEA62C5E89A30046A434 /* UserPreferences.swift */; };
 		D95959C22C5389A90097E324 /* BeliefsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959C12C5389A90097E324 /* BeliefsTests.swift */; };
 		D95959CC2C5389A90097E324 /* BeliefsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959CB2C5389A90097E324 /* BeliefsUITests.swift */; };
 		D95959CE2C5389A90097E324 /* BeliefsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95959CD2C5389A90097E324 /* BeliefsUITestsLaunchTests.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D904CEA62C5E89A30046A434 /* UserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserPreferences.swift; path = Model/UserPreferences.swift; sourceTree = "<group>"; };
 		D95959AD2C5389A70097E324 /* Beliefs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beliefs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95959BD2C5389A90097E324 /* BeliefsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeliefsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95959C12C5389A90097E324 /* BeliefsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliefsTests.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				D9595A142C54EBC60097E324 /* FeedView.swift */,
 				D9595A122C53B00C0097E324 /* EditBeliefView.swift */,
 				D95959FE2C53A21B0097E324 /* LaunchScreen.storyboard */,
+				D904CEA62C5E89A30046A434 /* UserPreferences.swift */,
 				D9595A162C54F5420097E324 /* Category.swift */,
 				D9595A002C53A8DB0097E324 /* Theme.swift */,
 				D98CA1382C5E10EF008A4D40 /* CategoryFeedView.swift */,
@@ -300,6 +303,7 @@
 				D9595A152C54EBC60097E324 /* FeedView.swift in Sources */,
 				D95959FB2C53A11F0097E324 /* BeliefsView.swift in Sources */,
 				D9595A132C53B00C0097E324 /* EditBeliefView.swift in Sources */,
+				D904CEA72C5E89A30046A434 /* UserPreferences.swift in Sources */,
 				D95959FA2C53A11F0097E324 /* MainTabView.swift in Sources */,
 				D9595A012C53A8DB0097E324 /* Theme.swift in Sources */,
 				D98CA1392C5E10EF008A4D40 /* CategoryFeedView.swift in Sources */,
