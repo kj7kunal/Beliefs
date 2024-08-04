@@ -16,7 +16,7 @@ class BeliefsTests: XCTestCase {
     }
     
     func testNewBeliefViewLoads() {
-        let view = NewBeliefView()
+        let view = NewBeliefView(onSave: {})
         XCTAssertNotNil(view, "NewBeliefView should load successfully")
     }
     

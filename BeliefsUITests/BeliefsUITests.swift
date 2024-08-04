@@ -38,4 +38,43 @@ final class BeliefsUITests: XCTestCase {
             }
         }
     }
+    
+    func testAddDeleteBelief() throws {
+        // Launch the app
+        let app = XCUIApplication()
+        app.launch()
+        
+        // Navigate to "My Beliefs" tab
+        app.tabBars.buttons["My Beliefs"].tap()
+        
+        // Tap "New Belief" button
+        app.buttons["New Belief"].tap()
+        
+        // Enter belief details and save
+        let beliefTextField = app.textFields["beliefTextField"]
+        XCTAssertTrue(beliefTextField.exists, "The beliefTextField should exist")
+        beliefTextField.tap()
+        beliefTextField.typeText("UI Test Belief")
+        
+        let evidenceTextField = app.textFields["evidenceTextField"]
+        XCTAssertTrue(evidenceTextField.exists, "The evidenceTextField should exist")
+        evidenceTextField.tap()
+        evidenceTextField.typeText("UI Test Evidence")
+        
+        app.buttons["Save"].tap()
+        
+        // Verify the belief appears in the "My Beliefs" list
+        XCTAssertTrue(app.staticTexts["UI Test Belief"].exists)
+        
+        // Locate UI Test Belief cell by its text
+        let beliefCell = app.staticTexts["UI Test Belief"].firstMatch
+        XCTAssertTrue(beliefCell.exists, "The belief cell should exist")
+        
+        // Swipe left to delete the belief
+        beliefCell.swipeLeft()
+        app.buttons["Delete"].tap()
+        
+        // Verify the belief was deleted
+        XCTAssertFalse(app.staticTexts["UI Test Belief"].exists)
+    }
 }
