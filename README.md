@@ -1,6 +1,9 @@
+<img src="Beliefs/Assets.xcassets/AppIcon.appiconset/Beliefs.png" alt="image" width="100"/>
+
 # Beliefs App
 
 Beliefs is an iOS application designed to help users keep track of their core beliefs and the evidence supporting them. This MVP version focuses on local storage and functionality.
+
 
 ## Features
 - Create and manage personal beliefs
