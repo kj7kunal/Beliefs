@@ -6,15 +6,18 @@ Beliefs is an iOS application designed to help users keep track of their core be
 - Create and manage personal beliefs
 - Attach evidence to each belief
 - View a personalized feed of beliefs
+- Sort and filter beliefs by category
+- Switch between dark and light modes
+- View belief statistics
+- Delete all data
 
 ## Development
 - **Language:** Swift
 - **Database:** SQLite
 - **Backend:** Golang (planned)
-
-## Setup
-- Xcode for iOS app development
-- Golang for backend services (future scope)
+- **Development Environment:** Xcode
+- **Version Control:** Git
+- **Testing:** XCTest for unit and UI tests
 
 ## Branching Strategy
 - **develop:** Staging branch for new features and development
@@ -22,5 +25,3 @@ Beliefs is an iOS application designed to help users keep track of their core be
 
 ## Contribution
 All new development should occur in a new branch based on `develop` and merged via pull request.
-
-
