@@ -7,20 +7,25 @@ struct NewBeliefView: View {
     @State private var selectedCategory = "Misc"
     @State private var categoryInput = ""
     @Environment(\.presentationMode) var presentationMode
+    
+    var onSave: () -> Void
 
     var body: some View {
         NavigationView {
             Form {
                 Section(header: Text("Belief")) {
                     TextField("Enter your belief", text: $title)
+                        .accessibilityIdentifier("beliefTextField")
                 }
                 Section(header: Text("Evidence")) {
                     TextField("Enter supporting evidence", text: $evidence)
+                        .accessibilityIdentifier("evidenceTextField")
                 }
                 Section(header: Text("Category")) {
                     AutocompleteTextField(text: $categoryInput, suggestions: categories.map { $0.name }) { suggestion in
                         categoryInput = suggestion
                     }
+                    .accessibilityIdentifier("categoryTextField")
                 }
             }
             .navigationBarTitle("New Belief", displayMode: .inline)
@@ -48,11 +53,12 @@ struct NewBeliefView: View {
         evidence = ""
         categoryInput = ""
         presentationMode.wrappedValue.dismiss()
+        onSave()
     }
 }
 
 struct NewBeliefView_Previews: PreviewProvider {
     static var previews: some View {
-        NewBeliefView()
+        NewBeliefView(onSave: {})
     }
 }
