@@ -1,0 +1,21 @@
+name: iOS Tests
+
+on:
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_15.0.app
+
+      - name: Build and test
+        run: xcodebuild test -workspace Beliefs.xcodeproj -scheme Beliefs -sdk 'iphonesimulator' -destination 'platform=iOS Simulator,name=iPhone 15 Pro Max,OS=17.0' | xcpretty --simple --color --report junit && exit ${PIPESTATUS[0]}
