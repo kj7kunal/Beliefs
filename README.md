@@ -61,7 +61,6 @@ BeliefsTests/                         # Unit test files
 BeliefsUITests/                       # UI test files
 ```
 
-
 ### Testing Instructions
 - Unit Tests (core functionality such as database operations)
   - Open the project in Xcode.
@@ -71,8 +70,6 @@ BeliefsUITests/                       # UI test files
   - Open the project in Xcode.
   - Select the BeliefsUITests scheme.
   - Press Cmd + U to run all UI tests.
-
-
 
 ## Contribution
 All new development should occur in a new branch based on `develop` and merged via pull request.
