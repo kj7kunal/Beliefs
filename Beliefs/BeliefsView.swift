@@ -45,7 +45,9 @@ struct BeliefsView: View {
                     }
                 }
                 .sheet(isPresented: $showNewBeliefView) {
-                    NewBeliefView()
+                    NewBeliefView(onSave: {
+                        refreshBeliefs()
+                    })
                 }
                 .onAppear {
                     refreshBeliefs()
@@ -56,6 +58,7 @@ struct BeliefsView: View {
     
     private func refreshBeliefs() {
         beliefs = DatabaseManager.shared.fetchAllBeliefs()
+        beliefs.sort { $0.id > $1.id }
     }
     
     private func delete(at offsets: IndexSet) {
